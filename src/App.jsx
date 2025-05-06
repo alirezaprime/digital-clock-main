@@ -1,7 +1,11 @@
+import Clock from "./components/Clock";
+import CountDown from "./components/CountDown";
+
 function App() {
   return (
     <div>
-      <p>App</p>
+      <Clock />
+      <CountDown />
     </div>
   );
 }
