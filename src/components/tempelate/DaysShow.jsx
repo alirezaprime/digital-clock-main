@@ -1,22 +1,23 @@
 import React from "react";
+import "../../styles/DaysShow.css";
 
 function DaysShow({ day, daysList }) {
-  if (!daysList.includes(day.toLowerCase())) {
-    throw new Error(`Invalid day: ${day}`);
-  }
   const capitalizedDays = daysList.map(
-    (day) => day.charAt(0).toUpperCase() + day.slice(1).toLowerCase()
+    (d) => d.charAt(0).toUpperCase() + d.slice(1).toLowerCase()
   );
 
-  // let foundDay = null;
-  // for (let Tday of capitalizedDays) {
-  //   if (Tday === day) {
-  //     foundDay = Tday;
-  //     break;
-  //   }
-  // }
-
-  return <div>{capitalizedDays.join(" ")}</div>;
+  return (
+    <div>
+      {capitalizedDays.map((d, index) => (
+        <span
+          key={index}
+          className={d.toLowerCase() === day ? "active-day" : "default-day"}
+        >
+          {d}
+        </span>
+      ))}
+    </div>
+  );
 }
 
 export default DaysShow;

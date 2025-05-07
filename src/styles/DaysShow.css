@@ -1,0 +1,12 @@
+.active-day {
+  color: white;
+  font-weight: bold;
+}
+
+.default-day {
+  color: black;
+}
+
+span {
+  margin: 0 4px; /* فاصله بین هر روز */
+}
