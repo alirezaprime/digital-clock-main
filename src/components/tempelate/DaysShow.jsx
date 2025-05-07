@@ -7,6 +7,15 @@ function DaysShow({ day, daysList }) {
   const capitalizedDays = daysList.map(
     (day) => day.charAt(0).toUpperCase() + day.slice(1).toLowerCase()
   );
+
+  // let foundDay = null;
+  // for (let Tday of capitalizedDays) {
+  //   if (Tday === day) {
+  //     foundDay = Tday;
+  //     break;
+  //   }
+  // }
+
   return <div>{capitalizedDays.join(" ")}</div>;
 }
 

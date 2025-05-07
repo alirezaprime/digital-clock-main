@@ -1,0 +1,14 @@
+@font-face {
+  src: url("../font/digital-7.ttf") format("truetype");
+  font-family: "Digital-7";
+}
+.Dive {
+  font-family: "Digital-7";
+  color: gray;
+  font-size: 50px;
+  margin: 20px 0 20px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  z-index: -1;
+}
