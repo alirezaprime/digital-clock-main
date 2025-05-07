@@ -4,11 +4,12 @@
 }
 .Dive {
   font-family: "Digital-7";
-  color: gray;
+  /* color: gray; */
+  color: rgb(67, 72, 75);
   font-size: 50px;
   margin: 20px 0 20px;
   width: 100%;
   position: absolute;
-  top: 242px;
+  top: 51px;
   z-index: -1;
 }

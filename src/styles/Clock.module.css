@@ -9,22 +9,28 @@
   align-items: center;
   width: 300px;
   text-align: center;
+  background-color: rgb(51, 52, 53);
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+  /* opacity: 0.5; */
 }
 @font-face {
   src: url("../font/digital-7.ttf") format("truetype");
   font-family: "Digital-7";
 }
 .ClockH1 {
-  background-color: green;
-  color: gray;
+  /* opacity: 0.5; */
+  /* color: green; */
+  color: rgb(67, 72, 75);
   font-size: 1.4rem;
   font-family: "Digital-7";
   /* padding: 10px; */
   width: 100%;
 }
 .ClockH3 {
-  /* background-color: blue; */
-  /* border: solid 1px blue; */
+  /* color: rgb(228, 241, 247); */
+  color: white;
   font-family: "Digital-7";
   font-size: 50px;
   margin: 20px 0 20px;
